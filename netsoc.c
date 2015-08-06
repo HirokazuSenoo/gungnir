@@ -1,6 +1,11 @@
 #include <gungnir.h>
-
+/*********************************************
+ポート番号を引数に取りbindされたソケットを返す
+acceptは行わない
+返り値でエラーが検出された場合exitでプロセスを落とすので注意
+*********************************************/
 int wsock(const char *portnum){
+
   char rbuf[NI_MAXHOST],sbuf[NI_MAXSERV];
   struct addrinfo hints, *res0;
   int soc,opt;

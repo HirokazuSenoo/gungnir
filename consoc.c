@@ -1,5 +1,7 @@
 #include <gungnir.h>
-
+/*************************************************
+IPアドレスとポート番号を受けて指定IPに接続したソケットディスクリプタを返す
+*************************************************/
 int consock(const char *addr,const char *portnum){
   struct sockaddr_in server;
   int sock;
