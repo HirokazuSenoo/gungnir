@@ -3,3 +3,5 @@ testcli.c
 testserv.c
 cli
 serv
+consoc.o
+netsoc.o

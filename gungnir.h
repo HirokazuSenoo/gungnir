@@ -21,6 +21,6 @@
 
 
 int wsock(const char *portnum);
-
+int consock(const char *addr,const char *portnum);
 
 #endif
